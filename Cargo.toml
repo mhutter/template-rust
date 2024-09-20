@@ -3,6 +3,7 @@ name = "{{project-name}}"
 version = "0.1.0"
 edition = "2021"
 authors = ["Manuel Hutter (https://github.com/mhutter)"]
+license = "MIT"
 repository = "https://github.com/mhutter/{{project-name}}"
 
 [dependencies]
