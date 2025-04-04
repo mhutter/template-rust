@@ -1,5 +1,13 @@
-# `{{project-name}}`
+# template-rust
 
-## License
+Custom templates for use with `rust generate`
 
-Licensed under the [MIT license](LICENSE).
+## Templates
+
+### `server`
+
+Template for a WebServer application
+
+```sh
+cargo generate --git https://github.com/mhutter/template-rust.git server
+```
