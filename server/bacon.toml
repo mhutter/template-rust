@@ -50,4 +50,5 @@ background = false
 on_change_strategy = "kill_then_restart"
 
 [keybindings]
+c = "job:clippy"
 alt-c = "job:clippy-all"

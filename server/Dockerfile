@@ -1,5 +1,5 @@
 ### BUILD ######################################################################
-FROM docker.io/library/rust:1.85-alpine AS build
+FROM docker.io/library/rust:1.88-alpine AS build
 WORKDIR /app
 
 # Install build dependencies
@@ -12,7 +12,7 @@ RUN --mount=type=cache,target=/root/.rustup \
     --mount=type=cache,target=/app/target \
     set -eux; \
     cargo build --release --locked; \
-    cp target/release/{{project-name}} .
+    mv target/release/{{project-name}} .
 
 ### RUNTIME ####################################################################
 FROM docker.io/library/alpine:latest
